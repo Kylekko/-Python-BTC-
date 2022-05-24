@@ -97,10 +97,10 @@ def trading(years, month, selectMonth, selectRange, period):
     plt.plot(dataSet)
     
     if period > 20:
-        plt.xticks(np.arange(month, selectRange, 30*12), np.arange(1, int((period+1)/12)+1))
+        plt.xticks(np.arange(month, selectRange, 30*12), np.arange(1, int((period+1)/12)+2))
         plt.xlabel('연간차트(1년단위)')
     else:
-        plt.xticks(np.arange(month, selectRange, 30), np.arange(1, period+1))
+        plt.xticks(np.arange(month, selectRange, 31), np.arange(1, period+1))
         plt.xlabel('월간차트(월)')
     plt.title('BTC모의투자')
     plt.ylabel('달러($)')
