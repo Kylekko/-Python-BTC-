@@ -174,5 +174,5 @@ def restart(): # 재시작 함수
     else:
         print('종료합니다')
         
-        
-notice()
+if __name__ == '__main__':
+    notice()
